@@ -1,0 +1,33 @@
+// @import "styles/common/";
+
+.auto-complete {
+  max-height: 6.25rem;
+  overflow-y: scroll;
+
+  &__row {
+    padding: 0.3125rem;
+
+    &--selected {
+      @extend .bg--gray;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    // background-color: red;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  &__button {
+    outline: none;
+    border: 0;
+    width: 100%;
+    text-align: left;
+    padding: 0px 10px;
+    background-color: transparent;
+  }
+}

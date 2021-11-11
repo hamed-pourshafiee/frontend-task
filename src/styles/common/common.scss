@@ -1,0 +1,231 @@
+/*
+  Types of standard ui classes
+ */
+
+// cursor
+.cursor {
+  &--pointer {
+    cursor: pointer;
+  }
+}
+
+// flex
+.flex {
+  display: flex;
+
+  &--justify-content {
+    justify-content: center;
+  }
+
+  &--justify-end {
+    justify-content: end;
+  }
+
+  &--align-items {
+    align-items: center;
+  }
+
+  &--between {
+    justify-content: space-between;
+  }
+
+  &--center {
+    @extend #{'.flex', '.flex--justify-content','.flex--align-items'};
+  }
+}
+
+// font
+.font {
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--normal {
+    font-weight: normal;
+  }
+
+  &--12 {
+    font-size: 0.75rem;
+  }
+
+  &--14 {
+    font-size: 0.875rem;
+  }
+
+  &--18 {
+    font-size: 1.125rem;
+  }
+}
+
+
+// width
+.w {
+  &--full {
+    width: 100%;
+  }
+
+  &--50\% {
+    width: 50%;
+  }
+
+  &--40\% {
+    width: 40%;
+  }
+
+  &--60\% {
+    width: 60%;
+  }
+
+  &--400 {
+    width: 25rem;
+
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+  &--600 {
+    width: 37.5rem;
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+  &--mx-400 {
+    max-width: 25rem;
+  }
+}
+
+// line
+.line {
+  &--simple {
+    background: #ebebeb;
+    @extend .outline--none;
+    height: 1px;
+    border: 0;
+  }
+}
+
+// position
+.position {
+  &--relative {
+    position: relative;
+  }
+
+  &--absolute {
+    position: absolute;
+  }
+}
+
+// rounded
+.rounded {
+  &--none {
+    border-radius: 0;
+  }
+
+  &--full {
+    border-radius: 50%;
+  }
+}
+
+// outline
+.outline {
+  &--none {
+    outline: none;
+  }
+}
+
+// align
+.text {
+  &--center {
+    text-align: center;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--underline {
+    text-decoration: underline;
+  }
+}
+
+// padding
+.p {
+  &--10 {
+    padding: 0.625rem;
+  }
+
+  &--y-10 {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+}
+
+// margin
+.m {
+  &--10 {
+    margin: 0.625rem;
+  }
+
+  &--t-5 {
+    margin-top: 0.3125rem;
+  }
+
+  &--t-10 {
+    margin-top: 0.625rem;
+  }
+
+  &--l-10 {
+    margin-left: 0.625rem;
+  }
+
+  &--y-10 {
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
+}
+
+// border
+.border {
+  &--0 {
+    border-width: 0px;
+  }
+
+  &--1 {
+    border-width: 1px;
+  }
+
+  &--solid {
+    border-style: solid;
+  }
+}
+
+// fade
+.fade {
+  &--out {
+    @include animation('fade-out 0.2s linear forwards');
+    // 
+  }
+
+  &--in {
+    @include animation('fade-in 0.2s linear forwards');
+  }
+}
+
+.animate {
+  &--spin {
+    @include animation('spin 1s linear infinite');
+  }
+}
+
+.z {
+  &--1 {
+    z-index: 1;
+  }
+  &--2 {
+    z-index: 2;
+  }
+}

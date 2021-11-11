@@ -1,0 +1,17 @@
+// @import "styles/common/";
+
+.button {
+  padding: 0.25rem 0.5rem;
+  border: 0.09375rem solid #83817d;
+  @extend #{'.flex--center','.cursor--pointer','.font--bold', '.bg--base'};
+}
+
+.button::after {
+  content: "\d7";
+  width: 2.625rem;
+  height: 2.625rem;
+  background-color: white;
+  margin-left: 0.25rem;
+  font-size: 1.75rem;
+  @extend #{'.flex--center','.font--normal', '.rounded--full'};
+}

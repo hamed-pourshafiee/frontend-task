@@ -1,0 +1,18 @@
+// @import "styles/common/";
+
+.input {
+  border-style: solid;
+  border-width: 1px;
+  padding: 0.625rem;
+  &__wrapper {
+    @extend .position--relative;
+  }
+  &__close, &__spin {
+    @extend .cursor--pointer;
+    @extend .position--absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0px 0.625rem;
+  }
+}

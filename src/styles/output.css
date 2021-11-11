@@ -1,0 +1,376 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input {
+  box-sizing: border-box; }
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    visibility: hidden; } }
+
+@-moz-keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    visibility: hidden; } }
+
+@-ms-keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    visibility: hidden; } }
+
+@-o-keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    visibility: hidden; } }
+
+@keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    visibility: hidden; } }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-ms-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@-moz-keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@-ms-keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@-o-keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.bg--base, .button {
+  background-color: #fda246; }
+
+.bg--white {
+  background-color: white; }
+
+.bg--gray, .auto-complete__row--selected {
+  background-color: #d2d2d2; }
+
+.bg--transparent {
+  background-color: transparent; }
+
+.text--base {
+  color: #fda246; }
+
+.text--gray {
+  color: #d2d2d2; }
+
+.border--gray {
+  border-color: #d2d2d2; }
+
+/*
+  Types of standard ui classes
+ */
+.cursor--pointer, .button, .input__close, .input__spin {
+  cursor: pointer; }
+
+.flex, .flex--center, .button, .button::after {
+  display: flex; }
+  .flex--justify-content, .flex--center, .button, .button::after {
+    justify-content: center; }
+  .flex--justify-end {
+    justify-content: end; }
+  .flex--align-items, .flex--center, .button, .button::after {
+    align-items: center; }
+  .flex--between {
+    justify-content: space-between; }
+
+.font--bold, .button {
+  font-weight: bold; }
+
+.font--normal, .button::after {
+  font-weight: normal; }
+
+.font--12 {
+  font-size: 0.75rem; }
+
+.font--14 {
+  font-size: 0.875rem; }
+
+.font--18 {
+  font-size: 1.125rem; }
+
+.w--full {
+  width: 100%; }
+
+.w--50\% {
+  width: 50%; }
+
+.w--40\% {
+  width: 40%; }
+
+.w--60\% {
+  width: 60%; }
+
+.w--400 {
+  width: 25rem; }
+  @media only screen and (max-width: 600px) {
+    .w--400 {
+      width: 100%; } }
+
+.w--600 {
+  width: 37.5rem; }
+  @media only screen and (max-width: 600px) {
+    .w--600 {
+      width: 100%; } }
+
+.w--mx-400 {
+  max-width: 25rem; }
+
+.line--simple {
+  background: #ebebeb;
+  height: 1px;
+  border: 0; }
+
+.position--relative, .input__wrapper {
+  position: relative; }
+
+.position--absolute, .input__close, .input__spin {
+  position: absolute; }
+
+.rounded--none {
+  border-radius: 0; }
+
+.rounded--full, .button::after {
+  border-radius: 50%; }
+
+.outline--none, .line--simple {
+  outline: none; }
+
+.text--center {
+  text-align: center; }
+
+.text--left {
+  text-align: left; }
+
+.text--right {
+  text-align: right; }
+
+.text--underline {
+  text-decoration: underline; }
+
+.p--10 {
+  padding: 0.625rem; }
+
+.p--y-10 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem; }
+
+.m--10 {
+  margin: 0.625rem; }
+
+.m--t-5 {
+  margin-top: 0.3125rem; }
+
+.m--t-10 {
+  margin-top: 0.625rem; }
+
+.m--l-10 {
+  margin-left: 0.625rem; }
+
+.m--y-10 {
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem; }
+
+.border--0 {
+  border-width: 0px; }
+
+.border--1 {
+  border-width: 1px; }
+
+.border--solid {
+  border-style: solid; }
+
+.fade--out {
+  -webkit-animation: fade-out 0.2s linear forwards;
+  -moz-animation: fade-out 0.2s linear forwards;
+  -ms-animation: fade-out 0.2s linear forwards;
+  -o-animation: fade-out 0.2s linear forwards;
+  animation: fade-out 0.2s linear forwards; }
+
+.fade--in {
+  -webkit-animation: fade-in 0.2s linear forwards;
+  -moz-animation: fade-in 0.2s linear forwards;
+  -ms-animation: fade-in 0.2s linear forwards;
+  -o-animation: fade-in 0.2s linear forwards;
+  animation: fade-in 0.2s linear forwards; }
+
+.animate--spin {
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  -ms-animation: spin 1s linear infinite;
+  -o-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite; }
+
+.z--1 {
+  z-index: 1; }
+
+.z--2 {
+  z-index: 2; }
+
+body.light {
+  background: white;
+  color: black; }
+
+body.dark {
+  background: black;
+  color: white; }
+  body.dark .bg--white {
+    background: black; }
+  body.dark .auto-complete__button {
+    color: white; }
+  body.dark .input__close {
+    color: black; }
+
+.button {
+  padding: 0.25rem 0.5rem;
+  border: 0.09375rem solid #83817d; }
+
+.button::after {
+  content: "\d7";
+  width: 2.625rem;
+  height: 2.625rem;
+  background-color: white;
+  margin-left: 0.25rem;
+  font-size: 1.75rem; }
+
+.dark-mode {
+  position: absolute;
+  left: 10px;
+  top: 10px; }
+
+.input {
+  border-style: solid;
+  border-width: 1px;
+  padding: 0.625rem; }
+  .input__close, .input__spin {
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0px 0.625rem; }
+
+.auto-complete {
+  max-height: 6.25rem;
+  overflow-y: scroll; }
+  .auto-complete__row {
+    padding: 0.3125rem; }
+  .auto-complete__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1; }
+  .auto-complete__button {
+    outline: none;
+    border: 0;
+    width: 100%;
+    text-align: left;
+    padding: 0px 10px;
+    background-color: transparent; }
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Nunito' !important; }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }

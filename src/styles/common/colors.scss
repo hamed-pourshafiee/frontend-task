@@ -1,0 +1,33 @@
+$base-color: #fda246;
+$gray-color: #d2d2d2;
+$white-color: white;
+
+.bg {
+  &--base {
+    background-color: $base-color;
+  }
+  &--white {
+    background-color: $white-color;
+  }
+  &--gray {
+    background-color: $gray-color;
+  }
+  &--transparent {
+    background-color: transparent;
+  }
+}
+
+.text {
+  &--base {
+    color: $base-color;
+  }
+  &--gray {
+    color: $gray-color;
+  }
+}
+
+.border {
+  &--gray {
+    border-color: $gray-color;
+  }
+}

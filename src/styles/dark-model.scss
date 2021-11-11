@@ -1,0 +1,22 @@
+body {
+  // matches data-theme="light" or data-theme="auto" with system instructing light mode
+  &.light {
+    background: white;
+    color: black;
+  }
+  
+  // matches data-theme="dark" or data-theme="auto" with system instructing dark mode
+  &.dark {
+    background: black;
+    color: white;
+    .bg--white {
+      background: black;
+    }
+    .auto-complete__button {
+      color: white;
+    }
+    .input__close {
+      color: black;
+    }
+  }
+}
